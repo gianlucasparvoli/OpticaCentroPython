@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="centrartextoquienessomos max50perc">
+    <hr />
+    <h3>¿Quienes Somos?</h3>
+    <hr />
+    <span class="quienessomos">
+        <p>Optica centro se caracteriza por brindar una atención personalizada y participativa. Contamos con un equipo formado por profesionales altamente capacitados. <br /> Más de 30 años de experiencia.<br /> Trabajamos con la más alta tecnología alemana para el centrado y tallado de cristales.</p>
+    </span>
+    <span class="quienessomos">
+         <img src="{{ url_for('static',filename='img/fondoOC.jpeg') }}"  class="quienessomos" alt="Responsive image" width="300" height="300">
+    </span>
+    <hr />
+</div>
+
+{% endblock %}

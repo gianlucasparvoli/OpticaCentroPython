@@ -1,0 +1,158 @@
+﻿body {
+    background-color: white;
+    margin: 0 auto;
+}
+
+.pantallacompleta {
+    min-height: 100%;
+}
+
+.centrartextoquienessomos {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.centrartexto {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.footercenter {
+    margin-right: 1rem;
+}
+
+
+.quienessomos {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+hr {
+    border: 1px solid red;
+    border-radius: 0.5px;
+}
+
+.max50perc {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+#map {
+    width: 90%;
+    height: 400px;
+    margin: 0 auto;
+}
+
+h3 {
+    text-align: center;
+}
+
+.marker {
+    background-image: url('../img/marcadorMapa.svg');
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.footerabajo {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.margenCentrado {
+    margin: 0 auto;
+}
+
+.tabla {
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: center;
+}
+
+.tablaLentes {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.textaligncenter {
+    text-align: center;
+}
+
+
+.margennavbar {
+    margin-right: 30px;
+}
+
+.ancho {
+    width: 178px;
+}
+
+.ERROR {
+    background-color: orangered;
+}
+
+.NORMAL {
+    background-color: white;
+}
+
+.textoderecha {
+    margin-left: 100px;
+}
+
+.autocomplete {
+    position: relative;
+    display: inline-block;
+}
+
+.autocomplete-items {
+    position: absolute;
+    color: black: border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+}
+
+    .autocomplete-items div {
+        padding: 10px;
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        border-bottom: 1px solid #d4d4d4;
+    }
+
+        /*when hovering an item:*/
+        .autocomplete-items div:hover {
+            background-color: #e9e9e9;
+        }
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+    background-color: DodgerBlue !important;
+    color: #ffffff;
+}
+
+.cssHOMETEXTO {
+    margin-top: 60px;
+}
+
+.margen50px {
+    margin-left: 50px;
+}
+
+.sinmarginright {
+    margin-right: 0px;
+    margin: 0 auto;
+    margin-top: 90px;
+}
+

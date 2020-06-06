@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div>
+
+    <div class="text-center">
+        <hr />
+        <h3>Contacto</h3>
+        <hr />
+    </div>
+
+    <div class="card-deck text-center sinmarginright">
+ 
+        <div class="card">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Teléfono</h4>
+            </div>
+            <div class="card-body">
+                <img src="{{ url_for('static',filename='img/tel.svg') }}"  width="60" height="60" alt="">
+                <h5 class="card-title pricing-card-title mt-3 mb-4">0336 - 4428077</h5>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Celular</h4>
+            </div>
+            <div class="card-body">
+                <a class="" href="https://api.whatsapp.com/send?phone=5493364371081">
+                    <img src="{{ url_for('static',filename='img/whatsapp-logo.svg') }}" width="60" height="60" alt="">
+                </a>
+                <h5 class="card-title pricing-card-title mt-3 mb-4">0336 - 4371081</h5>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Mail</h4>
+            </div>
+            <div class="card-body">
+                <a class="" href="mailto:opticacentro.sn@gmail.com?Subject=Consulta">
+                    <img src="{{ url_for('static',filename='img/gmail.svg') }}"  width="60" height="60" alt="">
+                </a>
+                <h5 class="card-title pricing-card-title mt-3 mb-4">opticacentro.sn@gmail.com</h5>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+{% endblock %}

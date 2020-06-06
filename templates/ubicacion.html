@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div>
+    <hr />
+    <h3>Optica Centro, Mitre 189, San Nicolas de los Arroyos, Buenos Aires</h3>
+    <hr />
+    <div id="map"></div>
+    <hr />
+</div>
+
+<script src='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js'></script>
+<script type="text/javascript" src="{{ url_for('static',filename='js/maps.js') }}"></script>
+
+{% endblock %}

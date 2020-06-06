@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Optica Centro</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="{{ url_for('static',filename='css/bootstrap.min.css') }}" /> -->
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/custom.css') }}"  />
+
+
+</head>
+
+<body>
+    <form id="form1" runat="server">
+        <div id="header">
+            <nav class="navbar navbar-expand navbar-dark bg-dark">
+                <a class="navbar-brand" href="/">
+                    <img src="{{ url_for('static',filename='img/gafas.svg') }}" width="30" height="30" alt="">
+                </a>
+                <a class="navbar-brand" href="/">Optica Centro</a>
+                <div class="navbar-nav ml-auto">
+                    <a class="navbar-brand" href="/quienessomos">Quienes Somos</a>
+                    <a class="navbar-brand" href="/ubicacion">Ubicacion</a>
+                    <a class="navbar-brand" href="/contacto">Contacto</a>
+                    <!-- <a class="navbar-brand" href="/login">Iniciar Sesion</a> -->
+                </div>
+            </nav>
+        </div>
+        <div id="content">
+            {% block content %}
+            {% endblock %}
+        </div>
+        <div id="footer" class="centrartexto bg-dark mx-auto footerabajo">
+            <a class="footercenter" href="#">
+                <img  src="{{ url_for('static',filename='img/facebook.svg') }}"  width="40" height="40" alt="">
+            </a>
+            <a class="footercenter" href="#">
+                <img  src="{{ url_for('static',filename='img/instagram.svg') }}" width="40" height="40" alt="">
+            </a>
+            <a class="footercenter" href="https://api.whatsapp.com/send?phone=5493364371081">
+                <img  src="{{ url_for('static',filename='img/whatsapp-logo.svg') }}" width="40" height="40" alt="">
+            </a>
+        </div>
+    </form>
+
+    <script type="text/javascript" src="{{ url_for('static',filename='js/jquery-3.4.1.min.js') }}" ></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='js/bootstrap.min.js') }}"  ></script>
+</body>
+
+</html>

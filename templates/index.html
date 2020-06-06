@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+
+<div>
+    <img src="{{ url_for('static',filename='img/raybanferrari.jpg') }}" class="img-fluid mySlides">
+    <img src="{{ url_for('static',filename='img/Oakley.jpg') }}"  class="img-fluid mySlides">
+    <img src="{{ url_for('static',filename='img/rayban.jpg') }}"   class="img-fluid mySlides">
+    <img src="{{ url_for('static',filename='img/vulk.jpg') }}"  class="img-fluid mySlides">
+</div>
+<div>
+    <h3 class="cssHOMETEXTO">La vida es fascinante, solo hay que mirarla a traves de las gafas correctas.</h3>
+</div>
+
+<script type="text/javascript" src="{{ url_for('static',filename='js/AutoSlideShowIMG.js') }}"  ></script>
+
+
+{% endblock %}
