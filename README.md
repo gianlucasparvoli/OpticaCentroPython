@@ -1,5 +1,5 @@
-#Python OpticaCentro
-'pip install flask'
-'virtualenv venv'
-'source venv/Source/activate'
-'python3 app.py'
+# Python OpticaCentro
+' pip install flask '
+' virtualenv venv '
+' source venv/Source/activate '
+' python3 app.py '
