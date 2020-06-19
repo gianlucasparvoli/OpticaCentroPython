@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/loginClass.css') }}" />
+    <title>Optica Centro</title>
+</head>
+
+<body class="text-center">
+
+
+    <form class="form-signin" action="/login" method="POST">
+        <img class="mb-4" src="{{ url_for('static',filename='img/gafas.svg') }}" alt="" width="72" height="72" />
+        <h1 class="h3 mb-3 font-weight-normal">Identifícate</h1>
+        <label for="inputUsuario" class="sr-only">Nro Usuario</label>
+        <input type="text" name="Usuario" class="form-control" placeholder="Usuario">
+        <!-- <asp:TextBox ID="inputUsuario" runat="server" class="form-control" placeholder="Usuario"></asp:TextBox> -->
+        <label for="inputPassword" class="sr-only">Contraseña</label>
+        <input type="text" name="Contraseña" class="form-control" placeholder="Contraseña">
+        <!-- <asp:TextBox ID="inputPassword" runat="server" type="password" class="form-control" placeholder="Contraseña"></asp:TextBox> -->
+        <button class="btn btn-lg btn-primary btn-block" id="btn_aceptar">Aceptar</button>
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        {% for m in messages %}
+        <label>{{ m }}</label>
+        {% endfor %}
+        {% endif %}
+        {% endwith %}
+        <!-- <asp:Label ID="lbl_info" runat="server" Text=""></asp:Label> -->
+        <p class="mt-5 mb-3 text-muted">Optica Centro &copy; 2020</p>
+    </form>
+
+    <script type="text/javascript" src="{{ url_for('static',filename='js/jquery-3.4.1.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='js/bootstrap.min.js') }}"></script>
+    <!-- <script type="text/javascript" src="JQuery/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="JQuery/bootstrap.min.js"></script> -->
+    <!-- <script type="text/javascript" src="js/ajaxLogin.js"></script> -->
+</body>
+
+</html>

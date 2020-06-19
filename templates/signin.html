@@ -1,0 +1,101 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+{% for m in messages %}
+
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+    {{ m }}
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+
+{% endfor %}
+{% endif %}
+{% endwith %}
+
+<form action="/signin" method="POST">
+    <div id="content">
+        <h3>ALTA USUARIOS</h3>
+        <hr />
+        <table class="table table-dark tabla" id="tablaInfo">
+            <tr>
+                <th>
+                    <table>
+                        <tr>
+                            <th scope="col">Grupo: </th>
+                            <td>
+                                <select name="IDGrupo" class="ancho">
+                                    <option value="1">1 - Administrador</option>
+                                    <option value="2">2 - Usuario Comun</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="col">Nombre: </th>
+                            <td>
+                                <input type="text" name="Nombre" placeholder="Nombre">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="col">Apellido: </th>
+                            <td>
+                                <input type="text" name="Apellido" placeholder="Apellido">
+                            </td>
+                        </tr>
+                    </table>
+                </th>
+                <th>
+                    <table>
+                        <tr>
+                            <th scope="col">Usuario: </th>
+                            <td>
+                                <input type="text" name="Usuario" placeholder="Usuario">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="col">Contraseña: </th>
+                            <td>
+                                <input type="text" name="Contraseña" placeholder="Contraseña">
+                            </td>
+                        </tr>
+                    </table>
+                </th>
+                <th>
+                    <table>
+                        <tr>
+                            <th scope="col">DNI: </th>
+                            <td>
+                                <input type="text" name="DNI" placeholder="DNI">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="col">Estado: </th>
+                            <td>
+                                <select name="Estado" class="ancho">
+                                    <option value="ACT">Activo</option>
+                                    <option value="INA">Inactivo</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                    </table>
+                </th>
+        </table>
+        <!-- <div class="tabla">
+        <asp:Label ID="lbl_Estado" runat="server" Text=""></asp:Label>
+    </div> -->
+        <div class="tabla">
+            <button class="btn btn-lg btn-primary btn-block" id="btn_Aceptar" type="submit">Aceptar</button>
+        </div>
+    </div>
+</form>
+<!-- <script type="text/javascript" src="JQuery/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="jquery/bootstrap.min.js"></script> -->
+<!-- <script type="text/javascript" src="js/ajaxUsuariosAlta.js"></script> -->
+
+
+{% endblock %}
